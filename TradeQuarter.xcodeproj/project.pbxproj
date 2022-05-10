@@ -7,13 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9FDB1ACF2829545D006F80E0 /* TickerRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDB1ACE2829545D006F80E0 /* TickerRepositoryTests.swift */; };
+		9FDB1AD728296E5C006F80E0 /* XCTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDB1AD628296E5C006F80E0 /* XCTestCase.swift */; };
+		9FDB1ADF2829810E006F80E0 /* BitfinexTickerServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDB1ADE2829810E006F80E0 /* BitfinexTickerServiceTests.swift */; };
+		9FDB1AE228298327006F80E0 /* Mocker in Frameworks */ = {isa = PBXBuildFile; productRef = 9FDB1AE128298327006F80E0 /* Mocker */; };
+		9FDB1AE42829834F006F80E0 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDB1AE32829834F006F80E0 /* MockData.swift */; };
+		9FDB1AEC2829A250006F80E0 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDB1AEB2829A250006F80E0 /* NetworkMonitor.swift */; };
 		9FF6E0142822DF69005971EA /* TradeQuarterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF6E0132822DF69005971EA /* TradeQuarterApp.swift */; };
-		9FF6E0162822DF69005971EA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF6E0152822DF69005971EA /* ContentView.swift */; };
 		9FF6E0182822DF6B005971EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FF6E0172822DF6B005971EA /* Assets.xcassets */; };
 		9FF6E01B2822DF6B005971EA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FF6E01A2822DF6B005971EA /* Preview Assets.xcassets */; };
-		9FF6E0252822DF6B005971EA /* TradeQuarterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF6E0242822DF6B005971EA /* TradeQuarterTests.swift */; };
-		9FF6E02F2822DF6B005971EA /* TradeQuarterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF6E02E2822DF6B005971EA /* TradeQuarterUITests.swift */; };
-		9FF6E0312822DF6B005971EA /* TradeQuarterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF6E0302822DF6B005971EA /* TradeQuarterUITestsLaunchTests.swift */; };
+		9FF6E05D28250A60005971EA /* TickerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF6E05C28250A60005971EA /* TickerExtensions.swift */; };
+		9FF6E05F28250B8B005971EA /* TickersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF6E05E28250B8B005971EA /* TickersView.swift */; };
+		9FF6E06528250CDF005971EA /* TradeQuarter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9FF6E06328250CDF005971EA /* TradeQuarter.xcdatamodeld */; };
+		9FF6E06728252D40005971EA /* TickerDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF6E06628252D40005971EA /* TickerDTO.swift */; };
+		9FF6E06C28252D98005971EA /* Bitfinex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF6E06B28252D98005971EA /* Bitfinex.swift */; };
+		9FF6E06F282531C1005971EA /* TickersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF6E06E282531C1005971EA /* TickersViewModel.swift */; };
+		9FF6E072282532D2005971EA /* TickerRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF6E071282532D2005971EA /* TickerRepository.swift */; };
+		9FF6E07428253387005971EA /* TickerDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF6E07328253387005971EA /* TickerDAO.swift */; };
+		9FF6E077282533B4005971EA /* TickerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF6E076282533B4005971EA /* TickerService.swift */; };
+		9FF6E07B2825494B005971EA /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF6E07A2825494B005971EA /* PersistenceController.swift */; };
+		9FF6E0B928256061005971EA /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9FF6E0B828256061005971EA /* Alamofire */; };
+		9FF6E0BD28257C5E005971EA /* TickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF6E0BC28257C5E005971EA /* TickerCell.swift */; };
+		9FF6E0C02825820A005971EA /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FF6E0BF2825820A005971EA /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,26 +39,32 @@
 			remoteGlobalIDString = 9FF6E00F2822DF69005971EA;
 			remoteInfo = TradeQuarter;
 		};
-		9FF6E02B2822DF6B005971EA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9FF6E0082822DF69005971EA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9FF6E00F2822DF69005971EA;
-			remoteInfo = TradeQuarter;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9FDB1ACE2829545D006F80E0 /* TickerRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerRepositoryTests.swift; sourceTree = "<group>"; };
+		9FDB1AD628296E5C006F80E0 /* XCTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestCase.swift; sourceTree = "<group>"; };
+		9FDB1ADE2829810E006F80E0 /* BitfinexTickerServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitfinexTickerServiceTests.swift; sourceTree = "<group>"; };
+		9FDB1AE32829834F006F80E0 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		9FDB1AEB2829A250006F80E0 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 		9FF6E0102822DF69005971EA /* TradeQuarter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TradeQuarter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FF6E0132822DF69005971EA /* TradeQuarterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeQuarterApp.swift; sourceTree = "<group>"; };
-		9FF6E0152822DF69005971EA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9FF6E0172822DF6B005971EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9FF6E01A2822DF6B005971EA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9FF6E0202822DF6B005971EA /* TradeQuarterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TradeQuarterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9FF6E0242822DF6B005971EA /* TradeQuarterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeQuarterTests.swift; sourceTree = "<group>"; };
-		9FF6E02A2822DF6B005971EA /* TradeQuarterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TradeQuarterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9FF6E02E2822DF6B005971EA /* TradeQuarterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeQuarterUITests.swift; sourceTree = "<group>"; };
-		9FF6E0302822DF6B005971EA /* TradeQuarterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeQuarterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9FF6E05C28250A60005971EA /* TickerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerExtensions.swift; sourceTree = "<group>"; };
+		9FF6E05E28250B8B005971EA /* TickersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickersView.swift; sourceTree = "<group>"; };
+		9FF6E06428250CDF005971EA /* TradeQuarter.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TradeQuarter.xcdatamodel; sourceTree = "<group>"; };
+		9FF6E06628252D40005971EA /* TickerDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerDTO.swift; sourceTree = "<group>"; };
+		9FF6E06B28252D98005971EA /* Bitfinex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bitfinex.swift; sourceTree = "<group>"; };
+		9FF6E06E282531C1005971EA /* TickersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickersViewModel.swift; sourceTree = "<group>"; };
+		9FF6E071282532D2005971EA /* TickerRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerRepository.swift; sourceTree = "<group>"; };
+		9FF6E07328253387005971EA /* TickerDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerDAO.swift; sourceTree = "<group>"; };
+		9FF6E076282533B4005971EA /* TickerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerService.swift; sourceTree = "<group>"; };
+		9FF6E07A2825494B005971EA /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		9FF6E0BC28257C5E005971EA /* TickerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerCell.swift; sourceTree = "<group>"; };
+		9FF6E0BE282581EB005971EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FF6E0BF2825820A005971EA /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FF6E0B928256061005971EA /* Alamofire in Frameworks */,
+				9FDB1AE228298327006F80E0 /* Mocker in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,22 +84,54 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9FF6E0272822DF6B005971EA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9FDB1AD028295461006F80E0 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				9FDB1ACE2829545D006F80E0 /* TickerRepositoryTests.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		9FDB1AD528296E44006F80E0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9FDB1AD628296E5C006F80E0 /* XCTestCase.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9FDB1ADC28297A01006F80E0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9FF6E05C28250A60005971EA /* TickerExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9FDB1ADD2829807B006F80E0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9FDB1ADE2829810E006F80E0 /* BitfinexTickerServiceTests.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9FDB1AEA2829A21C006F80E0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9FDB1AEB2829A250006F80E0 /* NetworkMonitor.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		9FF6E0072822DF69005971EA = {
 			isa = PBXGroup;
 			children = (
 				9FF6E0122822DF69005971EA /* TradeQuarter */,
 				9FF6E0232822DF6B005971EA /* TradeQuarterTests */,
-				9FF6E02D2822DF6B005971EA /* TradeQuarterUITests */,
 				9FF6E0112822DF69005971EA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -86,7 +141,6 @@
 			children = (
 				9FF6E0102822DF69005971EA /* TradeQuarter.app */,
 				9FF6E0202822DF6B005971EA /* TradeQuarterTests.xctest */,
-				9FF6E02A2822DF6B005971EA /* TradeQuarterUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,9 +148,17 @@
 		9FF6E0122822DF69005971EA /* TradeQuarter */ = {
 			isa = PBXGroup;
 			children = (
-				9FF6E0132822DF69005971EA /* TradeQuarterApp.swift */,
-				9FF6E0152822DF69005971EA /* ContentView.swift */,
 				9FF6E0172822DF6B005971EA /* Assets.xcassets */,
+				9FF6E0BF2825820A005971EA /* Launch Screen.storyboard */,
+				9FF6E0BE282581EB005971EA /* Info.plist */,
+				9FF6E0132822DF69005971EA /* TradeQuarterApp.swift */,
+				9FF6E075282533A2005971EA /* Services */,
+				9FF6E06D2825312F005971EA /* CoreData */,
+				9FF6E07028253204005971EA /* Repositories */,
+				9FF6E05A28250A14005971EA /* ViewModels */,
+				9FF6E05928250A07005971EA /* Views */,
+				9FDB1ADC28297A01006F80E0 /* Extensions */,
+				9FDB1AEA2829A21C006F80E0 /* Utils */,
 				9FF6E0192822DF6B005971EA /* Preview Content */,
 			);
 			path = TradeQuarter;
@@ -113,18 +175,65 @@
 		9FF6E0232822DF6B005971EA /* TradeQuarterTests */ = {
 			isa = PBXGroup;
 			children = (
-				9FF6E0242822DF6B005971EA /* TradeQuarterTests.swift */,
+				9FDB1AD528296E44006F80E0 /* Extensions */,
+				9FDB1ADD2829807B006F80E0 /* Services */,
+				9FDB1AD028295461006F80E0 /* Repositories */,
+				9FDB1AE32829834F006F80E0 /* MockData.swift */,
 			);
 			path = TradeQuarterTests;
 			sourceTree = "<group>";
 		};
-		9FF6E02D2822DF6B005971EA /* TradeQuarterUITests */ = {
+		9FF6E05928250A07005971EA /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				9FF6E02E2822DF6B005971EA /* TradeQuarterUITests.swift */,
-				9FF6E0302822DF6B005971EA /* TradeQuarterUITestsLaunchTests.swift */,
+				9FF6E05E28250B8B005971EA /* TickersView.swift */,
+				9FF6E0BC28257C5E005971EA /* TickerCell.swift */,
 			);
-			path = TradeQuarterUITests;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9FF6E05A28250A14005971EA /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				9FF6E06E282531C1005971EA /* TickersViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		9FF6E05B28250A22005971EA /* API */ = {
+			isa = PBXGroup;
+			children = (
+				9FF6E06B28252D98005971EA /* Bitfinex.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		9FF6E06D2825312F005971EA /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				9FF6E06328250CDF005971EA /* TradeQuarter.xcdatamodeld */,
+				9FF6E07328253387005971EA /* TickerDAO.swift */,
+				9FF6E07A2825494B005971EA /* PersistenceController.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		9FF6E07028253204005971EA /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				9FF6E071282532D2005971EA /* TickerRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		9FF6E075282533A2005971EA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9FF6E076282533B4005971EA /* TickerService.swift */,
+				9FF6E06628252D40005971EA /* TickerDTO.swift */,
+				9FF6E05B28250A22005971EA /* API */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +252,10 @@
 			dependencies = (
 			);
 			name = TradeQuarter;
+			packageProductDependencies = (
+				9FF6E0B828256061005971EA /* Alamofire */,
+				9FDB1AE128298327006F80E0 /* Mocker */,
+			);
 			productName = TradeQuarter;
 			productReference = 9FF6E0102822DF69005971EA /* TradeQuarter.app */;
 			productType = "com.apple.product-type.application";
@@ -165,24 +278,6 @@
 			productReference = 9FF6E0202822DF6B005971EA /* TradeQuarterTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		9FF6E0292822DF6B005971EA /* TradeQuarterUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9FF6E03A2822DF6B005971EA /* Build configuration list for PBXNativeTarget "TradeQuarterUITests" */;
-			buildPhases = (
-				9FF6E0262822DF6B005971EA /* Sources */,
-				9FF6E0272822DF6B005971EA /* Frameworks */,
-				9FF6E0282822DF6B005971EA /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				9FF6E02C2822DF6B005971EA /* PBXTargetDependency */,
-			);
-			name = TradeQuarterUITests;
-			productName = TradeQuarterUITests;
-			productReference = 9FF6E02A2822DF6B005971EA /* TradeQuarterUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -200,10 +295,6 @@
 						CreatedOnToolsVersion = 13.3.1;
 						TestTargetID = 9FF6E00F2822DF69005971EA;
 					};
-					9FF6E0292822DF6B005971EA = {
-						CreatedOnToolsVersion = 13.3.1;
-						TestTargetID = 9FF6E00F2822DF69005971EA;
-					};
 				};
 			};
 			buildConfigurationList = 9FF6E00B2822DF69005971EA /* Build configuration list for PBXProject "TradeQuarter" */;
@@ -215,13 +306,16 @@
 				Base,
 			);
 			mainGroup = 9FF6E0072822DF69005971EA;
+			packageReferences = (
+				9FF6E0B728256061005971EA /* XCRemoteSwiftPackageReference "Alamofire" */,
+				9FDB1AE028298327006F80E0 /* XCRemoteSwiftPackageReference "Mocker" */,
+			);
 			productRefGroup = 9FF6E0112822DF69005971EA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				9FF6E00F2822DF69005971EA /* TradeQuarter */,
 				9FF6E01F2822DF6B005971EA /* TradeQuarterTests */,
-				9FF6E0292822DF6B005971EA /* TradeQuarterUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -231,19 +325,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FF6E0C02825820A005971EA /* Launch Screen.storyboard in Resources */,
 				9FF6E01B2822DF6B005971EA /* Preview Assets.xcassets in Resources */,
 				9FF6E0182822DF6B005971EA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		9FF6E01E2822DF6B005971EA /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9FF6E0282822DF6B005971EA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -257,8 +345,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FF6E0162822DF69005971EA /* ContentView.swift in Sources */,
+				9FF6E06C28252D98005971EA /* Bitfinex.swift in Sources */,
+				9FF6E077282533B4005971EA /* TickerService.swift in Sources */,
+				9FF6E07B2825494B005971EA /* PersistenceController.swift in Sources */,
+				9FF6E06F282531C1005971EA /* TickersViewModel.swift in Sources */,
+				9FF6E06528250CDF005971EA /* TradeQuarter.xcdatamodeld in Sources */,
+				9FF6E072282532D2005971EA /* TickerRepository.swift in Sources */,
+				9FF6E05D28250A60005971EA /* TickerExtensions.swift in Sources */,
+				9FF6E07428253387005971EA /* TickerDAO.swift in Sources */,
+				9FF6E0BD28257C5E005971EA /* TickerCell.swift in Sources */,
+				9FDB1AEC2829A250006F80E0 /* NetworkMonitor.swift in Sources */,
+				9FF6E05F28250B8B005971EA /* TickersView.swift in Sources */,
 				9FF6E0142822DF69005971EA /* TradeQuarterApp.swift in Sources */,
+				9FF6E06728252D40005971EA /* TickerDTO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,16 +365,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FF6E0252822DF6B005971EA /* TradeQuarterTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9FF6E0262822DF6B005971EA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9FF6E0312822DF6B005971EA /* TradeQuarterUITestsLaunchTests.swift in Sources */,
-				9FF6E02F2822DF6B005971EA /* TradeQuarterUITests.swift in Sources */,
+				9FDB1ADF2829810E006F80E0 /* BitfinexTickerServiceTests.swift in Sources */,
+				9FDB1ACF2829545D006F80E0 /* TickerRepositoryTests.swift in Sources */,
+				9FDB1AE42829834F006F80E0 /* MockData.swift in Sources */,
+				9FDB1AD728296E5C006F80E0 /* XCTestCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,11 +379,6 @@
 			isa = PBXTargetDependency;
 			target = 9FF6E00F2822DF69005971EA /* TradeQuarter */;
 			targetProxy = 9FF6E0212822DF6B005971EA /* PBXContainerItemProxy */;
-		};
-		9FF6E02C2822DF6B005971EA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 9FF6E00F2822DF69005971EA /* TradeQuarter */;
-			targetProxy = 9FF6E02B2822DF6B005971EA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -331,6 +419,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -391,6 +480,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -420,9 +510,12 @@
 				DEVELOPMENT_TEAM = 58ZQV96JTQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TradeQuarter/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -434,7 +527,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -449,9 +542,12 @@
 				DEVELOPMENT_TEAM = 58ZQV96JTQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TradeQuarter/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -463,7 +559,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -507,42 +603,6 @@
 			};
 			name = Release;
 		};
-		9FF6E03B2822DF6B005971EA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 58ZQV96JTQ;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.danny.TradeQuarterUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TradeQuarter;
-			};
-			name = Debug;
-		};
-		9FF6E03C2822DF6B005971EA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 58ZQV96JTQ;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.danny.TradeQuarterUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TradeQuarter;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -573,16 +633,52 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9FF6E03A2822DF6B005971EA /* Build configuration list for PBXNativeTarget "TradeQuarterUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9FF6E03B2822DF6B005971EA /* Debug */,
-				9FF6E03C2822DF6B005971EA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9FDB1AE028298327006F80E0 /* XCRemoteSwiftPackageReference "Mocker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WeTransfer/Mocker.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		9FF6E0B728256061005971EA /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9FDB1AE128298327006F80E0 /* Mocker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9FDB1AE028298327006F80E0 /* XCRemoteSwiftPackageReference "Mocker" */;
+			productName = Mocker;
+		};
+		9FF6E0B828256061005971EA /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9FF6E0B728256061005971EA /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		9FF6E06328250CDF005971EA /* TradeQuarter.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9FF6E06428250CDF005971EA /* TradeQuarter.xcdatamodel */,
+			);
+			currentVersion = 9FF6E06428250CDF005971EA /* TradeQuarter.xcdatamodel */;
+			path = TradeQuarter.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 9FF6E0082822DF69005971EA /* Project object */;
 }

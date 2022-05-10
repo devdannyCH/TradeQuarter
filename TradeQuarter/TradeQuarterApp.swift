@@ -6,12 +6,16 @@
 //
 
 import SwiftUI
+import CoreData
 
 @main
 struct TradeQuarterApp: App {
+            
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TickersView()
+                .preferredColorScheme(.dark)
+                .environment(\.managedObjectContext, PersistenceController.shared.container.viewContext)
         }
     }
 }
