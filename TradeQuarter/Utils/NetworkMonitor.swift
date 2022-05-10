@@ -9,11 +9,11 @@ import Combine
 import Network
 
 protocol NetworkMonitorProtocol {
-    var isConnected: PassthroughSubject<Bool, Never> { get }
+    var isConnected: CurrentValueSubject<Bool, Never> { get }
 }
 
 class NetworkMonitor: NetworkMonitorProtocol {
-    var isConnected: PassthroughSubject<Bool, Never> = .init()
+    var isConnected: CurrentValueSubject<Bool, Never>
     
     static let shared = NetworkMonitor()
     
@@ -22,8 +22,8 @@ class NetworkMonitor: NetworkMonitorProtocol {
     private var disposables = Set<AnyCancellable>()
 
     init() {
+        isConnected = CurrentValueSubject<Bool, Never>.init(monitor.currentPath.status == .satisfied)
         monitor.pathUpdateHandler = { path in
-            print(self.monitor.currentPath.status == .satisfied)
             self.isConnected.send(self.monitor.currentPath.status == .satisfied)
         }
         monitor.start(queue: queue)

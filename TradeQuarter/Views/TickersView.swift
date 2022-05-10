@@ -17,7 +17,7 @@ struct TickersView: View {
     
     // MARK: - Search
     @State private var searchQuery: String = ""
-
+    
     
     var body: some View {
         NavigationView {
@@ -31,16 +31,19 @@ struct TickersView: View {
                 }
                 .navigationTitle("Marketplace")
                 .toolbar{
-                    if !viewModel.isConnected{
-                        Image(systemName: "icloud.slash").foregroundColor(.red)
-                    }
+                    if !viewModel.isConnected || viewModel.error != nil {
+                        Image(systemName: "icloud.slash").foregroundColor(.red).opacity(0.8)                    }else {
+                            Image(systemName: "checkmark.icloud").foregroundColor(.green)
+                                .opacity(viewModel.showSyncAnimation ? 0.8 : 0)
+                                .animation(.linear(duration: 0.3), value: viewModel.showSyncAnimation)
+                        }
                 }
             }else if !viewModel.isConnected{
                 VStack{
                     Text((searchQuery.isEmpty ? "Marketplace" : "Search") + " Unavailable").font(.headline)
                     Text("TradeQuarter isn't connected to the internet.").font(.callout)
                 }.foregroundColor(.gray)
-
+                
             }else if let error = viewModel.error {
                 VStack{
                     Text("An error has occured").font(.headline)
@@ -63,7 +66,7 @@ struct TickersView: View {
             }
         }
         .onAppear(){
-            viewModel.syncTickers()
+            viewModel.syncTickersEvery5s()
         }
     }
 }

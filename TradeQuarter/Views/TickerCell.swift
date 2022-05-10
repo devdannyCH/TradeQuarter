@@ -13,7 +13,8 @@ struct TickerCell: View {
     
     var numberFormatter: NumberFormatter {
         let formatter = NumberFormatter()
-        formatter.numberStyle = .decimal
+        formatter.numberStyle = .percent
+        formatter.minimumFractionDigits = 2
         formatter.positivePrefix = "+"
         return formatter
     }
