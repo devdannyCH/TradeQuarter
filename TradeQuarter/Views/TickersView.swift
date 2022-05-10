@@ -12,7 +12,7 @@ struct TickersView: View {
     @StateObject private var viewModel: TickersViewModel = TickersViewModel();
     
     // MARK: - Core Data
-    @FetchRequest(sortDescriptors: [SortDescriptor(\.symbol, order: .forward)])
+    @FetchRequest(sortDescriptors: [SortDescriptor(\.lastPrice, order: .reverse)])
     private var tickers: FetchedResults<Ticker>
     
     // MARK: - Search
