@@ -38,21 +38,13 @@ struct TickersView: View {
                                 .animation(.linear(duration: 0.3), value: viewModel.showSyncAnimation)
                         }
                 }
-            }else if !viewModel.isConnected{
-                VStack{
-                    Text((searchQuery.isEmpty ? "Marketplace" : "Search") + " Unavailable").font(.headline)
-                    Text("TradeQuarter isn't connected to the internet.").font(.callout)
-                }.foregroundColor(.gray)
-                
-            }else if let error = viewModel.error {
-                VStack{
-                    Text("An error has occured").font(.headline)
-                    Text(error.localizedDescription).font(.callout)
-                }.foregroundColor(.gray)
             }else{
                 VStack{
-                    Text("Data Unavailable").font(.headline)
-                    Text("TradeQuarter has no data to display").font(.callout)
+                    Text((searchQuery.isEmpty ? "Marketplace" : "Search") + " Unavailable").font(.headline)
+                    Text(!viewModel.isConnected ? "TradeQuarter isn't connected to the internet." : "TradeQuarter has no data to display").font(.callout)
+                    if let error = viewModel.error {
+                        Text(error.localizedDescription).font(.callout)
+                    }
                 }.foregroundColor(.gray)
             }
         }
