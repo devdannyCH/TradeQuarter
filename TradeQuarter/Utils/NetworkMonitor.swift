@@ -13,9 +13,9 @@ protocol NetworkMonitorProtocol {
 }
 
 class NetworkMonitor: NetworkMonitorProtocol {
-    var isConnected: CurrentValueSubject<Bool, Never>
-    
     static let shared = NetworkMonitor()
+    
+    var isConnected: CurrentValueSubject<Bool, Never>
     
     private let queue = DispatchQueue(label: "NetworkMonitor")
     private let monitor = NWPathMonitor()

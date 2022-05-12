@@ -20,7 +20,7 @@ class TickerDao: TickerDaoProtocol {
     init(viewContext: NSManagedObjectContext = PersistenceController.shared.container.viewContext) {
         self.viewContext = viewContext
     }
-
+    
     
     func update(_ entities: [TickerDTO]) -> Future<[Ticker ], Error> {
         Future<[Ticker], Error> { output in
